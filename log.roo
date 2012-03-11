@@ -1,0 +1,150 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:19:05
+// [failed] script --file pizzashop.roo
+// [failed] script --file  pizzashop.roo
+project --topLevelPackage com.springsource.roo.pizzashop
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+// [failed] script --file  pizzashop.roo
+// [failed] script --file  pizzashop.roo
+quit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 17:23:49
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:23:53
+project --topLevelPackage com.springsource.roo.pizzashop
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float 
+field set --fieldName toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+perform eclipse
+web mvc setup
+web mvc all --package ~.web
+security setup
+backup
+// script --file  pizzashop.roo
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:25:30
+perform eclipse
+quit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 17:30:29
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 17:34:35
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:35:04
+project --topLevelPackage com.springsource.roo.pizzashop
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float 
+field set --fieldName toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+perform eclipse
+web mvc setup
+web mvc all --package ~.web
+security setup
+backup
+// script --file  pizzashop.roo
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:35:50
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 17:38:55
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 17:39:23
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:39:27
+project --topLevelPackage com.springsource.roo.pizzashop
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float 
+field set --fieldName toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+web mvc setup
+web mvc all --package ~.web
+security setup
+perform eclipse
+backup
+// script --file  pizzashop.roo
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:41:30
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 17:42:37
+selenium test --controller ~.web.ToppingController
+hint
+download status
+download accept terms of use
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 17:59:15
+project --topLevelPackage com.springsource.roo.pizzashop
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float 
+field set --fieldName toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+web mvc setup
+web mvc all --package ~.web
+// script --file pizzashop.roo
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 18:05:48
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 18:20:53
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 18:25:02
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 18:25:19
+project --topLevelPackage com.springsource.roo.pizzashop
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float 
+field set --fieldName toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+web mvc setup
+web mvc all --package ~.web
+perform eclipse
+// script --file pizzashop.roo
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 18:26:17
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-26 18:26:41
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-26 20:36:53
