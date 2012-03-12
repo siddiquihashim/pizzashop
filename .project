@@ -23,10 +23,6 @@
 		<buildCommand>
 			<name>org.eclipse.ajdt.core.ajbuilder</name>
 			<arguments>
-				<dictionary>
-					<key>aspectPath</key>
-					<value>org.springframework.aspects</value>
-				</dictionary>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
@@ -46,13 +42,13 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>com.springsource.sts.roo.core.nature</nature>
+		<nature>org.eclipse.ajdt.ui.ajnature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
-		<nature>org.eclipse.ajdt.ui.ajnature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
 		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
-		<nature>com.springsource.sts.roo.core.nature</nature>
 		<nature>org.springframework.ide.eclipse.core.springnature</nature>
 		<nature>org.hibernate.eclipse.console.hibernateNature</nature>
 	</natures>
